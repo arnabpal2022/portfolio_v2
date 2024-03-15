@@ -1,0 +1,85 @@
+.inner {
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(2, 8, 23);
+  transition: background 150ms ease-in-out;
+}
+.inner::before {
+  content: "";
+  position: absolute;
+  transform: translate(200%, 0%);
+  background-image: url("./github-mark-white.svg");
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-flex;
+  height: 120px;
+  width: 120px;
+}
+
+@media screen and (min-width: 320px) {
+  .inner::before {
+    transform: translate(100%, 0%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+    .inner::before {
+      transform: translate(150%, 0%);
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    .inner::before {
+      transform: translate(200%, 0%);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .inner::before {
+      transform: translate(400%, 0%);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .inner::before {
+      transform: translate(250%, 0%);
+    }
+  }
+.card {
+  background: rgb(128 128 128 / 0.2);
+  padding: 4px; /* border width */
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(80px);
+}
+
+.card:hover > .inner {
+  background: rgb(2, 8, 23, 0.6);
+  backdrop-filter: blur(80px);
+}
+
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1; /* to keep it at below everything else */
+  top: 0; /* to align it at top */
+  left: 0; /* to align it at left */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* to make it circular */
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.fakeblob {
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
