@@ -1,7 +1,6 @@
 import Form from "@/components/Form";
 import { NavigationMenuDemo } from "@/components/navbar";
 
-
 export default function Contact() {
   return (
     <>
@@ -13,7 +12,10 @@ export default function Contact() {
         <div className="mt-5 sm:mt-12">
           <NavigationMenuDemo />
         </div>
-        <Form/>
+        <div className="text-4xl text-center mt-10 mb-10 font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">
+          Contact Me
+        </div>
+        <Form />
       </main>
     </>
   );

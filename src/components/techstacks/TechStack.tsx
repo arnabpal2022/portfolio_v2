@@ -9,8 +9,8 @@ interface Props {
 export const TechStack: React.FC<Props> = ({ stack }) => {
   const stackArray: string[] = stack.split(", ");
   return (
-    <div>
-      <div className="text-4xl text-center mt-10 font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">
+    <div id="skills">
+      <div className="text-4xl text-center pt-[6rem] font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">
         My Tech Stacks
       </div>
       <div className="text-center mt-5 mb-5 gap-2">

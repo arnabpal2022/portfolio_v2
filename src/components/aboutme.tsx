@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <div className="font-bold mt-6 text-xl"> About Me</div>
-      <div className="mt-5"><span className="ml-10"></span>
+      <div className="mt-5 text-justify sm:text-left"><span className="ml-10"></span>
         Hello, Myself Arnab Pal, I am a Passionate Frontend Developer, Who is
         currently focused on learning Backend Development. My Passion for Web
         Dev Started in My Early Years of college life When I used to Make Simple

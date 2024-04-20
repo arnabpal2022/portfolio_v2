@@ -17,13 +17,17 @@ import { Input } from "@/components/ui/input";
 import Card from "./cards/cards";
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+  name: z.string(),
+  email: z.string().min(2).max(50),
+  message: z.string(),
 });
 export default function ProfileForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      name: "",
+      email: "",
+      message: "",
     },
   });
 
@@ -34,21 +38,40 @@ export default function ProfileForm() {
   }
 
   return (
-    <div className="mx-auto w-96 border rounded-md p-10">
+    <div className="mx-auto sm:w-9/12 w-11/12 border rounded-xl p-10">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
             control={form.control}
-            name="username"
+            name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Username</FormLabel>
+                <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input
+                    placeholder="Enter Your Email"
+                    {...field}
+                    type="email"
+                  />
                 </FormControl>
-                <FormDescription>
-                  This is your public display name.
-                </FormDescription>
+                <FormMessage />
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder="Enter Your Email"
+                    {...field}
+                    type="email"
+                  />
+                </FormControl>
+                <FormMessage />
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder="Enter Your Email"
+                    {...field}
+                    type="email"
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}

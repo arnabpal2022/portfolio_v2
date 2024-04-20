@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
-export default function Card({ name, description }) {
+export default function Card({ name, description, size }) {
   const allCardsRef = useRef(null);
 
   useEffect(() => {
