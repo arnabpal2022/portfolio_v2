@@ -51,34 +51,55 @@ export default function Socials() {
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline">Socials<span className="px-1"></span><FaChevronDown/></Button>
+            <Button variant="outline">
+              Socials<span className="px-1"></span>
+              <FaChevronDown />
+            </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56">
-            <DropdownMenuLabel className="text-center">My Social Handles</DropdownMenuLabel>
+            <DropdownMenuLabel className="text-center">
+              My Social Handles
+            </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                Github
-                <DropdownMenuShortcut><FaGithub size="15" /></DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                LinkedIn
-                <DropdownMenuShortcut><FaLinkedin size="15" /></DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                X
-                <DropdownMenuShortcut><BsTwitterX size="15" /></DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Contact Me
-                <DropdownMenuShortcut><IoMail size="15"/></DropdownMenuShortcut>
-              </DropdownMenuItem>
+              <Link href="https://github.com/arnabpal2022">
+                <DropdownMenuItem>
+                  Github
+                  <DropdownMenuShortcut>
+                    <FaGithub size="15" />
+                  </DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
+              <Link href="https://www.linkedin.com/in/arnab-pal-90946b244/">
+                <DropdownMenuItem>
+                  LinkedIn
+                  <DropdownMenuShortcut>
+                    <FaLinkedin size="15" />
+                  </DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
+
+              <Link href="https://x.com/itzarnabpal2">
+                <DropdownMenuItem>
+                  X
+                  <DropdownMenuShortcut>
+                    <BsTwitterX size="15" />
+                  </DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
+
+              <Link href="#contact">
+                <DropdownMenuItem>
+                  Contact Me
+                  <DropdownMenuShortcut>
+                    <IoMail size="15" />
+                  </DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </Link>
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-
-      
     </>
   );
 }

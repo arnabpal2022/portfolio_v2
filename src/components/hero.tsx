@@ -51,13 +51,13 @@ export default function Hero() {
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <div className="grid md:grid-cols-5 gap-10">
               <div className="md:col-span-3 text-center font-bold">
-                <p>I'm always hungry for a new opportunity to help others.</p>
-                <p>You provide the vision, and I'll bring it to life!</p>
+                <p>I&apos;m always hungry for a new opportunity to help others.</p>
+                <p>You provide the vision, and I&apos;ll bring it to life!</p>
 
-                <p>Let's work together....</p>
+                <p>Let&apos;s work together....</p>
 
                 <div className="mt-5 text-xl">
-                  <Link href="https://github.com/arnabpal2022">
+                  <Link href="mailto:arnabpalofficial2003@gmail.com">
                     <Button variant="outline">Drop Me a Message</Button>
                   </Link>
                 </div>

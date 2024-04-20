@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat as FontSans } from "next/font/google";
+// import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -8,11 +8,13 @@ export const metadata: Metadata = {
   description: "A Personal Portfolio",
 };
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight:"variable"
-});
+// const fontSans = FontSans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+//   weight: "variable",
+//   display: "swap",
+//   adjustFontFallback: false,
+// });
 
 export default function RootLayout({
   children,
@@ -23,8 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased dark",
-          fontSans.variable
+          "min-h-screen bg-background font-sans antialiased dark montserrat",
+          // fontSans.variable
         )}
       >
         {children}

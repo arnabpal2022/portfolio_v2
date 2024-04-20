@@ -5,10 +5,17 @@ import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa";
 import { GoArrowUpRight } from "react-icons/go";
 
-export default function Card({ name, description, size }) {
-  const allCardsRef = useRef(null);
+interface cardprops {
+  name: string,
+  description: string,
+}
+
+export default function Card({ name, description }: cardprops) {
+  const allCardsRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    if(!allCardsRef.current) return;
+
     const allCards = allCardsRef.current.querySelectorAll(".card");
     const btnOutline = allCardsRef.current.querySelectorAll("#btn");
 
@@ -50,14 +57,14 @@ export default function Card({ name, description, size }) {
             <div className="font-bold text-3xl flex flex-row items-center justify-start w-full mb-3 gap-5">
               <div>{name}</div>
               
-              <div className="flex flex-row gap-2">
+              {/* <div className="flex flex-row gap-2">
                 <Button variant="outline" size="icon">
                   <FaGithub/>
                 </Button>
                 <Button variant="outline" size="icon">
                   <GoArrowUpRight/>
                 </Button>
-              </div>
+              </div> */}
             </div>
             <p className="text-sm mb-2">{description}</p>
           </div>
