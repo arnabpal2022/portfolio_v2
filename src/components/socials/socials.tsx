@@ -45,7 +45,7 @@ export default function Socials() {
           </Button>
         </Link> */}
 
-        <Link href="/resume">
+        <Link href="https://drive.google.com/file/d/1Xy48skPYFNg1Toxs12RAi0hlw8Elg-fg/view?usp=sharing">
           <Button variant="outline">Check My Resume</Button>
         </Link>
 

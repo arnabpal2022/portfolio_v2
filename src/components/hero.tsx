@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
 export default function Hero() {
   const techstacks =
     "JavaScript, TypeScript, React.js, Zustand, Next.js, BootStrap, Tailwind CSS, ShadCN UI, MongoDB, Express.js, Node.js, Firebase, Figma, Python, C, C++, Java";
-  const date = new Date(Date.now())
+  const date = new Date(Date.now());
   return (
     <>
       <main
@@ -51,7 +51,9 @@ export default function Hero() {
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <div className="grid md:grid-cols-5 gap-10">
               <div className="md:col-span-3 text-center font-bold">
-                <p>I&apos;m always hungry for a new opportunity to help others.</p>
+                <p>
+                  I&apos;m always hungry for a new opportunity to help others.
+                </p>
                 <p>You provide the vision, and I&apos;ll bring it to life!</p>
 
                 <p>Let&apos;s work together....</p>
@@ -73,7 +75,9 @@ export default function Hero() {
 
         <footer className="mt-auto text-center py-3 bg-gradient-to-tr from-blue-950 to-purple-950">
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-white font-semibold">© Arnab Pal. {date.getFullYear()}. All rights reserved.</p>
+            <p className="text-white font-semibold">
+              © Arnab Pal. {date.getFullYear()}. All rights reserved.
+            </p>
           </div>
         </footer>
       </main>
