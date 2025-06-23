@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import AnimatedBackground from "@/components/background/AnimatedBackground";
 
 export const metadata: Metadata = {
   title: "Arnab Pal",
@@ -29,6 +30,7 @@ export default function RootLayout({
           // fontSans.variable
         )}
       >
+        <AnimatedBackground />
         {children}
       </body>
     </html>
