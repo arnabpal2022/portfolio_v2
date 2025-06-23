@@ -78,29 +78,6 @@
   }
 }
 
-/* Subtle grid pattern */
-.grid-pattern {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  animation: gridMove 60s linear infinite;
-}
-
-@keyframes gridMove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(50px, 50px);
-  }
-}
-
 /* Gradient overlay for depth */
 .gradient-overlay {
   position: absolute;
@@ -241,10 +218,6 @@
     height: 150px;
   }
   
-  .grid-pattern {
-    background-size: 30px 30px;
-  }
-  
   .particle {
     display: none;
   }
@@ -267,7 +240,6 @@
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   .orb,
-  .grid-pattern,
   .gradient-overlay,
   .particle {
     animation-duration: 0.01ms !important;

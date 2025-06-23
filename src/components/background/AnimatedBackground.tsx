@@ -13,9 +13,6 @@ const AnimatedBackground: React.FC = () => {
       <div className="orb orb-4"></div>
       <div className="orb orb-5"></div>
       
-      {/* Grid pattern */}
-      <div className="grid-pattern"></div>
-      
       {/* Gradient overlay */}
       <div className="gradient-overlay"></div>
       
