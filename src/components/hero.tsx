@@ -21,7 +21,7 @@ export default function Hero() {
       <main
         id="content"
         role="main"
-        className="relative max-w-5xl gap-3 px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto size-full before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2"
+        className="relative max-w-5xl gap-3 px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto size-full before:absolute before:top-0 before:start-1/2 before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2"
       >
         <Header />
 
@@ -44,7 +44,7 @@ export default function Hero() {
         <Socials />
         <TechStack stack={techstacks} />
         <Projects />
-        <div className="flex flex-col justify-center" id="contact">
+        <div className="text-center pt-[6rem] px-4 sm:px-6 lg:px-8" id="contact">
           <div className="text-4xl text-center pt-[6rem] mb-5 font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">
             Contact Me
           </div>

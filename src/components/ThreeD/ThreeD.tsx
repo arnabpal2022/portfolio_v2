@@ -16,8 +16,8 @@ function PixelatedSphere() {
 
   return (
     <points ref={sphereRef as any}>
-      <icosahedronGeometry args={[2, 5]} />
-      <pointsMaterial color="white" size={0.05} />
+      <icosahedronGeometry args={[2.1, 5]} />
+      <pointsMaterial color="white" size={0.08} />
     </points>
   );
 }
@@ -45,11 +45,11 @@ function Birds() {
   });
 
   const birds = [...Array(50)].map((_, i) => {
-    const size = i % 2 === 0 ? 0.03 : 0.05;
+    const size = i % 2 === 0 ? 0.08 : 0.10;
     return (
       <mesh key={i} position={[1, 0, 0]}>
         <planeGeometry args={[size, size]} />
-        <meshBasicMaterial color="white" />
+        <meshBasicMaterial color="gray" />
       </mesh>
     );
   });
